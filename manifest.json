@@ -1,0 +1,12 @@
+{
+  "title": "Kingdom Sheet",
+  "version": "0.0.1",
+  "author": "BioweaponIrum",
+  "description": "A custom actor sheet for Kingdom Management in Pathfinder 2nd edition Kingmaker.",
+  "type": "actor",
+  "template": "sheet.html",
+  "scripts": [
+    "sheet.js"
+  ],
+  "dependencies": []
+}

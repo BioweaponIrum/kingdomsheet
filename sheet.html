@@ -1,0 +1,412 @@
+<div class="sheet-header">
+  <img src="pathfinder-logo.png" alt="Pathfinder Logo">
+  <h1>Kingdom Management Sheet</h1>
+</div>
+
+<div class="sheet-body">
+  <div class="sheet-section">
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="kingdom-name">Kingdom Name</label>
+        <input type="text" id="kingdom-name" name="data.kingdomName" value="{{data.kingdomName}}">
+      </div>
+      <div class="sheet-column">
+        <label for="charter">Charter</label>
+        <input type="text" id="charter" name="data.charter" value="{{data.charter}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="heartland">Heartland</label>
+        <input type="text" id="heartland" name="data.heartland" value="{{data.heartland}}">
+      </div>
+      <div class="sheet-column">
+        <label for="government">Government</label>
+        <input type="text" id="government" name="data.government" value="{{data.government}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="capitol-city">Capitol City</label>
+        <input type="text" id="capitol-city" name="data.capitolCity" value="{{data.capitolCity}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="size">Size</label>
+        <input type="number" id="size" name="data.size" value="{{data.size}}">
+      </div>
+      <div class="sheet-column">
+        <label for="rp">RP</label>
+        <input type="number" id="rp" name="data.rp" value="{{data.rp}}">
+      </div>
+      <div class="sheet-column">
+        <label for="xp">XP</label>
+        <input type="number" id="xp" name="data.xp" value="{{data.xp}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="level-max">Level (Max)</label>
+        <input type="number" id="level-max" name="data.levelMax" value="{{data.levelMax}}">
+      </div>
+      <div class="sheet-column">
+        <label for="fame">Fame</label>
+        <input type="number" id="fame" name="data.fame" value="{{data.fame}}">
+      </div>
+      <div class="sheet-column">
+        <label for="infamy">Infamy</label>
+        <input type="number" id="infamy" name="data.infamy" value="{{data.infamy}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="resource-dice">Resource Dice</label>
+        <input type="number" id="resource-dice" name="data.resourceDice" value="{{data.resourceDice}}">
+      </div>
+      <div class="sheet-column">
+        <label for="bonus-dice">Bonus Dice</label>
+        <input type="number" id="bonus-dice" name="data.bonusDice" value="{{data.bonusDice}}">
+      </div>
+    </div>
+  </div>
+  <div class="sheet-section">
+    <h2>Ability Scores</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="culture-score">Culture</label>
+        <input type="number" id="culture-score" name="data.cultureScore" value="{{data.cultureScore}}">
+        <label for="culture-modifier">Modifier</label>
+        <input type="number" id="culture-modifier" name="data.cultureModifier" value="{{data.cultureModifier}}">
+      </div>
+      <div class="sheet-column">
+        <label for="economy-score">Economy</label>
+        <input type="number" id="economy-score" name="data.economyScore" value="{{data.economyScore}}">
+        <label for="economy-modifier">Modifier</label>
+        <input type="number" id="economy-modifier" name="data.economyModifier" value="{{data.economyModifier}}">
+      </div>
+      <div class="sheet-column">
+        <label for="loyalty-score">Loyalty</label>
+        <input type="number" id="loyalty-score" name="data.loyaltyScore" value="{{data.loyaltyScore}}">
+        <label for="loyalty-modifier">Modifier</label>
+        <input type="number" id="loyalty-modifier" name="data.loyaltyModifier" value="{{data.loyaltyModifier}}">
+      </div>
+      <div class="sheet-column">
+        <label for="stability-score">Stability</label>
+        <input type="number" id="stability-score" name="data.stabilityScore" value="{{data.stabilityScore}}">
+        <label for="stability-modifier">Modifier</label>
+        <input type="number" id="stability-modifier" name="data.stabilityModifier" value="{{data.stabilityModifier}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+                <label for="control-dc">Control DC</label>
+        <input type="text" id="control-dc" name="data.controlDC" value="{{data.controlDC}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Ruin</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="corruption-score">Corruption</label>
+        <input type="number" id="corruption-score" name="data.corruptionScore" value="{{data.corruptionScore}}">
+        <label for="corruption-penalty">Penalty</label>
+        <input type="number" id="corruption-penalty" name="data.corruptionPenalty" value="{{data.corruptionPenalty}}">
+        <label for="corruption-threshold">Threshold</label>
+        <input type="number" id="corruption-threshold" name="data.corruptionThreshold" value="{{data.corruptionThreshold}}">
+      </div>
+      <div class="sheet-column">
+        <label for="crime-score">Crime</label>
+        <input type="number" id="crime-score" name="data.crimeScore" value="{{data.crimeScore}}">
+        <label for="crime-penalty">Penalty</label>
+        <input type="number" id="crime-penalty" name="data.crimePenalty" value="{{data.crimePenalty}}">
+        <label for="crime-threshold">Threshold</label>
+        <input type="number" id="crime-threshold" name="data.crimeThreshold" value="{{data.crimeThreshold}}">
+      </div>
+      <div class="sheet-column">
+        <label for="decay-score">Decay</label>
+        <input type="number" id="decay-score" name="data.decayScore" value="{{data.decayScore}}">
+        <label for="decay-penalty">Penalty</label>
+        <input type="number" id="decay-penalty" name="data.decayPenalty" value="{{data.decayPenalty}}">
+        <label for="decay-threshold">Threshold</label>
+        <input type="number" id="decay-threshold" name="data.decayThreshold" value="{{data.decayThreshold}}">
+      </div>
+      <div class="sheet-column">
+        <label for="strife-score">Strife</label>
+        <input type="number" id="strife-score" name="data.strifeScore" value="{{data.strifeScore}}">
+        <label for="strife-penalty">Penalty</label>
+        <input type="number" id="strife-penalty" name="data.strifePenalty" value="{{data.strifePenalty}}">
+        <label for="strife-threshold">Threshold</label>
+        <input type="number" id="strife-threshold" name="data.strifeThreshold" value="{{data.strifeThreshold}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="unrest-score">Unrest</label>
+        <input type="number" id="unrest-score" name="data.unrestScore" value="{{data.unrestScore}}">
+        <label for="unrest-penalty">Penalty</label>
+        <input type="number" id="unrest-penalty" name="data.unrestPenalty" value="{{data.unrestPenalty}}">
+        <label for="unrest-consumption">Consumption</label>
+        <input type="number" id="unrest-consumption" name="data.unrestConsumption" value="{{data.unrestConsumption}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Leaders</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="ruler-name">Ruler</label>
+        <input type="text" id="ruler-name" name="data.rulerName" value="{{data.rulerName}}">
+        <input type="checkbox" id="ruler" name="data.ruler" value="{{data.ruler}}">
+      </div>
+      <div class="sheet-column">
+        <label for="counselor-name">Counselor</label>
+        <input type="text" id="counselor-name" name="data.counselorName" value="{{data.counselorName}}">
+        <input type="checkbox" id="counselor" name="data.counselor" value="{{data.counselor}}">
+      </div>
+      <div class="sheet-column">
+        <label for="general-name">General</label>
+        <input type="text" id="general-name" name="data.generalName" value="{{data.GeneralName}}">
+        <input type="checkbox" id="General" name="data.General" value="{{data.General}}">
+      </div>
+      <div class="sheet-column">
+        <label for="emissary-name">Emissary</label>
+        <input type="text" id="emissary-name" name="data.emissaryName" value="{{data.emissaryName}}">
+        <input type="checkbox" id="emissary" name="data.emissary" value="{{data.emissary}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="magister-name">Magister</label>
+        <input type="text" id="magister-name" name="data.magisterName" value="{{data.magisterName}}">
+        <input type="checkbox" id="magister" name="data.magister" value="{{data.magister}}">
+      </div>
+      <div class="sheet-column">
+                <label for="treasurer-name">Treasurer</label>
+        <input type="text" id="treasurer-name" name="data.treasurerName" value="{{data.treasurerName}}">
+        <input type="checkbox" id="treasurer" name="data.treasurer" value="{{data.treasurer}}">
+      </div>
+      <div class="sheet-column">
+        <label for="viceroy-name">Viceroy</label>
+        <input type="text" id="viceroy-name" name="data.viceroyName" value="{{data.viceroyName}}">
+        <input type="checkbox" id="viceroy" name="data.viceroy" value="{{data.viceroy}}">
+      </div>
+      <div class="sheet-column">
+        <label for="warden-name">Warden</label>
+        <input type="text" id="warden-name" name="data.wardenName" value="{{data.wardenName}}">
+        <input type="checkbox" id="warden" name="data.warden" value="{{data.warden}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Skills</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="agriculture-skill">Agriculture (Stability)</label>
+        <input type="text" id="agriculture-skill" name="data.agricultureSkill" value="{{data.agricultureSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="arts-skill">Arts (Culture)</label>
+        <input type="text" id="arts-skill" name="data.artsSkill" value="{{data.artsSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="boating-skill">Boating (Economy)</label>
+        <input type="text" id="boating-skill" name="data.boatingSkill" value="{{data.boatingSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="defense-skill">Defense (Military)</label>
+        <input type="text" id="defense-skill" name="data.defenseSkill" value="{{data.defenseSkill}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="engineering-skill">Engineering (Stability)</label>
+        <input type="text" id="engineering-skill" name="data.engineeringSkill" value="{{data.engineeringSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="exploration-skill">Exploration (Economy)</label>
+        <input type="text" id="exploration-skill" name="data.explorationSkill" value="{{data.explorationSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="folklore-skill">Folklore (Culture)</label>
+        <input type="text" id="folklore-skill" name="data.folkloreSkill" value="{{data.folkloreSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="industry-skill">Industry (Economy)</label>
+        <input type="text" id="industry-skill" name="data.industrySkill" value="{{data.industrySkill}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="intrique-skill">Intrique (Loyalty)</label>
+        <input type="text" id="intrique-skill" name="data.intriqueSkill" value="{{data.intriqueSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="magic-skill">Magic (Culture)</label>
+        <input type="text" id="magic-skill" name="data.magicSkill" value="{{data.magicSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="politics-skill">Politics (Loyalty)</label>
+        <input type="text" id="politics-skill" name="data.politicsSkill" value="{{data.politicsSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="scholarship-skill">Scholarship (Culture)</label>
+        <input type="text" id="scholarship-skill" name="data.scholarshipSkill" value="{{data.scholarshipSkill}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="statecraft-skill">Statecraft (Loyalty)</label>
+        <input type="text" id="statecraft-skill" name="data.statecraftSkill" value="{{data.statecraftSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="trade-skill">Trade (Economy)</label>
+        <input type="text" id="trade-skill" name="data.tradeSkill" value="{{data.tradeSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="warfare-skill">Warfare (Loyalty)</label>
+        <input type="text" id="warfare-skill" name="data.warfareSkill" value="{{data.warfareSkill}}">
+      </div>
+      <div class="sheet-column">
+        <label for="wilderness-skill">Wilderness (Stability)</label>
+        <input type="text" id="wilderness-skill" name="data.wildernessSkill" value="{{data.wildernessSkill}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Feats</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+                <textarea id="feats" name="data.feats" value="{{data.feats}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Abilities</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <textarea id="abilities" name="data.abilities" value="{{data.abilities}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Commodities</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="food">Food</label>
+        <input type="number" id="food" name="data.food" value="{{data.food}}">
+        <label for="food-max">Max</label>
+        <input type="number" id="food-max" name="data.foodMax" value="{{data.foodMax}}">
+      </div>
+      <div class="sheet-column">
+        <label for="lumber">Lumber</label>
+        <input type="number" id="lumber" name="data.lumber" value="{{data.lumber}}">
+        <label for="lumber-max">Max</label>
+        <input type="number" id="lumber-max" name="data.lumberMax" value="{{data.lumberMax}}">
+      </div>
+      <div class="sheet-column">
+        <label for="luxuries">Luxuries</label>
+        <input type="number" id="luxuries" name="data.luxuries" value="{{data.luxuries}}">
+        <label for="luxuries-max">Max</label>
+        <input type="number" id="luxuries-max" name="data.luxuriesMax" value="{{data.luxuriesMax}}">
+      </div>
+      <div class="sheet-column">
+        <label for="ore">Ore</label>
+        <input type="number" id="ore" name="data.ore" value="{{data.ore}}">
+        <label for="ore-max">Max</label>
+        <input type="number" id="ore-max" name="data.oreMax" value="{{data.oreMax}}">
+      </div>
+    </div>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="stone">Stone</label>
+        <input type="number" id="stone" name="data.stone" value="{{data.stone}}">
+        <label for="stone-max">Max</label>
+        <input type="number" id="stone-max" name="data.stoneMax" value="{{data.stoneMax}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Work Sites</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <label for="farmlands">Farmlands</label>
+                <input type="number" id="farmlands" name="data.farmlands" value="{{data.farmlands}}">
+      </div>
+      <div class="sheet-column">
+        <label for="lumber-camps">Lumber Camps</label>
+        <input type="number" id="lumber-camps" name="data.lumberCamps" value="{{data.lumberCamps}}">
+      </div>
+      <div class="sheet-column">
+        <label for="mines">Mines</label>
+        <input type="number" id="mines" name="data.mines" value="{{data.mines}}">
+      </div>
+      <div class="sheet-column">
+        <label for="quarries">Quarries</label>
+        <input type="number" id="quarries" name="data.quarries" value="{{data.quarries}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Trade Agreements</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <textarea id="trade-agreements" name="data.tradeAgreements" value="{{data.tradeAgreements}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Event Check DC</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <input type="number" id="event-check-dc" name="data.eventCheckDC" value="{{data.eventCheckDC}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Settlements</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <textarea id="settlements" name="data.settlements" value="{{data.settlements}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Relations</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <textarea id="relations" name="data.relations" value="{{data.relations}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section">
+    <h2>Ongoing Events</h2>
+    <div class="sheet-row">
+      <div class="sheet-column">
+        <textarea id="ongoing-events" name="data.ongoingEvents" value="{{data.ongoingEvents}}"></textarea>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+
+
+
+		
